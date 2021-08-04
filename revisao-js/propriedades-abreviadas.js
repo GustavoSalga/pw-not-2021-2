@@ -1,20 +1,28 @@
-// Criando um objeto cujo valor das propriedades vem de variáveis
-
-let usuario = 'João'
-let senha = 'Deus123'
-let name = 'João das Couves'
-let lastLogin = '2021-02-08 22:49:28'
-
-let userInfo  = {
-    login: usuario,
-    password: senha,
-    name, // propriedade abreviada (name: name)
-    lastLogin // propriedade abreviada (lastLogin: lastLogin)
+/* let infoUsuario = {
+    nome: 'Jucicleison',
+    nomeCompleto: 'Jucicleison da Silva Souza',
+    grupo: 'alunos',
+    senha: '12345678'
 }
 
-console.log(userInfo)
+console.log(infoUsuario) */
 
-let info = 'Isto é um teste'
+let usuario = 'Jucicleison'
+let nome = 'Jucicleison da Silva Souza'
+let grupo = 'alunos'
+let password = '12345678'
 
-console.log(info) // assim ele apenas da o print da mensagem 'Isto é um teste'
-console.log({info}) // assim transformamos a variável em objeto, com isso temos também qual variável é e qual valor ela carrega, quando printamos
+// quando a variável tem o mesmo nome da propriedade, podemos abreviar 
+let infoUsuario = {
+    usuario, // usuario: usuario,
+    nomeCompleto: nome,
+    grupo, // grupo: grupo,
+    senha: password,
+}
+
+console.log(infoUsuario)
+
+// Exibindo o conteúdo da variável 'password para fins de depuração
+console.log(password)
+console.log({password})
+console.log({password, grupo})
