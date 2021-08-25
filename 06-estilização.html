@@ -53,7 +53,15 @@
       {smallBox2}
       {mediumBox}
       {largeBox}
-      <CustomBox style={ {backgroundColor: 'limegreen', color: 'navy'}} size="demium">Custom Box 1</CustomBox>
+      <CustomBox style={ {backgroundColor: 'limegreen', color: 'navy'}} 
+      size="medium" id="custom1">Custom Box 1</CustomBox>
+
+      <CustomBox style={ {backgroundColor: 'tomato', color: 'yellow', fontWeight: 'bold'}} 
+      size="large">Custom Box 2</CustomBox>
+
+      { /* o fontStyle abaixo tem prioridade no fontStyle definido lá no componente acima*/}
+      <CustomBox style={ { fontStyle: 'normal', backgroundColor: 'sienna', color: 'limegreen'}} 
+      size="small">Custom Box 3</CustomBox>
       </>
 
     ReactDOM.render(container, document.getElementById('root'))
